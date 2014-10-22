@@ -29,13 +29,52 @@
   </script>
 
 
+  <!-- start Mixpanel -->
+  <script type="text/javascript">
+    (function(f, b) {
+      if (!b.__SV) {
+        var a, e, i, g;
+        window.mixpanel = b;
+        b._i = [];
+        b.init = function(a, e, d) {
+          function f(b, h) {
+            var a = h.split(".");
+            2 == a.length && (b = b[a[0]], h = a[1]);
+            b[h] = function() {
+              b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }
 
-<!-- start Mixpanel -->
-<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
-</script>
-<!-- end Mixpanel -->
+          var c = b;
+          "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+          c.people = c.people || [];
+          c.toString = function(b) {
+            var a = "mixpanel";
+            "mixpanel" !== d && (a += "." + d);
+            b || (a += " (stub)");
+            return a
+          };
+          c.people.toString = function() {
+            return c.toString(1) + ".people (stub)"
+          };
+          i =
+            "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user"
+            .split(" ");
+          for (g = 0; g < i.length; g++) f(c, i[g]);
+          b._i.push([a, e, d])
+        };
+        b.__SV = 1.2;
+        a = f.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = "//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";
+        e = f.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(a, e)
+      }
+    })(document, window.mixpanel || []);
+    mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
+  </script>
+  <!-- end Mixpanel -->
 </head>
 
 <body>
@@ -48,15 +87,22 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
       <section>
         <img src="img/ionic-logo.png" class="logo" width="296" height="331">
         <h4>Building Hybrid Apps with AngularJS and Ionic</h4>
+        <p class="fragment">The missing SDK for the Web</p>
       </section>
 
 
       <section>
         <img src="img/me.jpeg" style="max-width: 260px; max-height: 260px; border-radius: 30px; display:block; margin:auto">
+
         <h3>Mike Hartington</h3>
+
         <p>Developer Advocate for Ionic</p>
-        <p><a href="https://twitter.com/mhartington">@mhartington</a></p>
-        <p><a href="https://github.com/mhartington">github.com/mhartington</a></p>
+
+        <p><a href="https://twitter.com/mhartington">@mhartington</a>
+        </p>
+
+        <p><a href="https://github.com/mhartington">github.com/mhartington</a>
+        </p>
       </section>
 
 
@@ -64,9 +110,13 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         <h3>Overview</h3>
 
         <p>Native vs Hybrid Apps</p>
+
         <p>Intro Ionic</p>
+
         <p>UI Components</p>
+
         <p>Ionic CLI</p>
+
         <p>Demos</p>
 
       </section>
@@ -83,8 +133,11 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         <h3>The Downsides of Native</h3>
 
         <p>Proficiency in each platform required</p>
+
         <p>Entirely separate code bases</p>
+
         <p>Timely &amp; expensive development</p>
+
         <p>Diminishing returns</p>
 
       </section>
@@ -92,12 +145,14 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <h3>More Platforms.<br> More Problems.</h3>
+
         <p style="margin-top: 60px">
           <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
           <img src="img/android.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
           <img src="img/windows.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
           <img src="img/firefoxos.png" class="logo" width="200" height="200" style="margin-left: 10px;">
         </p>
+
         <p><span class="light-text">
             Why are we still coding for multiple platforms?
           </span>
@@ -116,16 +171,21 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         <img src="img/cordova.png" class="logo" style="margin-bottom: 0; width:700px; display:block; margin:auto">
 
         <p>Hybrid Apps: HTML5 that acts like native</p>
+
         <p>Phonegap renamed to Cordova</p>
+
         <p>Web wrapped in native layer</p>
+
         <p>Direct access to native APIs</p>
+
         <p>Familiar web dev environment</p>
+
         <p>Develop a single code base (web platform)</p>
 
       </section>
 
       <section>
-	      <img src="img/excited.gif" style="display:block; width:500px; height: auto; margin: auto;">
+        <img src="img/excited.gif" style="display:block; width:500px; height: auto; margin: auto;">
       </section>
       <section>
         <blockquote>
@@ -144,9 +204,13 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         <img class="logo" style=" margin:auto; width:150px" src="img/fb.png" alt="">
 
         <p>Have a multi-million dollar budget?</p>
+
         <p>Have a large team of experienced native developers?</p>
+
         <p>Does your billion-dollar revenue depend on this app?</p>
+
         <p>If so...do native</p>
+
         <p class="fragment">...but today it's not so black and white</p>
 
       </section>
@@ -163,7 +227,7 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
 
       <section>
-	      <h3>Mobile devices have <br> rapidly improved!</h3>
+        <h3>Mobile devices have <br> rapidly improved!</h3>
 
         <table>
           <tr>
@@ -201,10 +265,12 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
 
       <section>
-	      <h3>Web-standards have <br> rapidly improved!</h3>
+        <h3>Web-standards have <br> rapidly improved!</h3>
 
         <p>caniuse.com is lookin' pretty good nowadays</p>
+
         <p>Android is now Chromium-based</p>
+
         <p>iOS users keep their devices up-to-date</p>
 
         <img src="img/caniuse.png" class="logo">
@@ -213,12 +279,14 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <img src="img/ios7-adoption.png">
-        <p style="font-size:10px">https://mixpanel.com/trends/#report/ios_7/from_date:-332,to_date:0</p>
+
+        <p style="font-size:10px">https://mixpanel.com/trends/#report/ios_8/from_date:-29,report_unit:day,to_date:0</p>
       </section>
 
 
       <section>
         <img src="img/android-adoption.png">
+
         <p style="font-size:10px">https://mixpanel.com/trends/#report/android_kitkat</p>
       </section>
 
@@ -227,9 +295,13 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         <h3>Native SDKs Are Great</h3>
 
         <p>Common UI</p>
+
         <p>Views</p>
+
         <p>Navigation and stack history</p>
+
         <p>Transitions</p>
+
         <p>Gestures</p>
 
       </section>
@@ -240,11 +312,18 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
       </section>
 
       <section>
+        <img src="img/native-vs-web.jpg" alt="">
+      </section>
+
+      <section>
         <h3>There's No Web SDK</h3>
 
         <p>It's the wild-west for hybrid apps</p>
+
         <p>We need to bridge the gap between web and native</p>
+
         <p>We need rich, native-style UI components and interactions</p>
+
         <p>We need UI APIs, not just jQuery widgets</p>
 
       </section>
@@ -259,7 +338,8 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
 
       <section>
-	      <h3>Web Technologies You <br> Already Know and Love</h3>
+        <h3>Web Technologies You <br> Already Know and Love</h3>
+
         <div style="margin-top: 70px">
           <img src="img/html.png" class="logo" width="185" height="260">
           <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
@@ -274,16 +354,21 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <img src="img/trends.png">
-        <p style="font-size:10px">http://www.google.com/trends/explore#q=angularjs%2C%20ember.js%2C%20knockoutjs%2C%20backbonejs&date=8%2F2011%2037m&cmpt=q</p>
+
+        <p style="font-size:10px">
+          http://www.google.com/trends/explore#q=angularjs%2C%20ember.js%2C%20knockoutjs%2C%20backbonejs&date=8%2F2011%2037m&cmpt=q</p>
       </section>
 
 
       <section>
         <img src="img/angular-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
-	<h3>Standing on the <br> Shoulders of AngularJS</h3>
+
+        <h3>Standing on the <br> Shoulders of AngularJS</h3>
 
         <p>Proven for large-scale webapp development</p>
+
         <p>Extends the HTML vocabulary</p>
+
         <p>UI Components using Directives and Services</p>
 
       </section>
@@ -291,9 +376,11 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <img src="img/native-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
+
         <h3>Native Focused</h3>
 
         <p>Modeled off of native SDKs</p>
+
         <p>Built to work with Cordova</p>
 
       </section>
@@ -301,10 +388,13 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <img src="img/performance-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
+
         <h3>Performance Obsessed</h3>
 
         <p>Hardware accelerated animations</p>
+
         <p>Minimal DOM Manipulation</p>
+
         <p>Remove 300ms tap delay</p>
 
       </section>
@@ -312,12 +402,17 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
 
       <section>
         <img src="img/design-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
+
         <h3>Plain ol' CSS</h3>
 
         <p>Cohesive visual system</p>
+
         <p>Clean and simple</p>
+
         <p>Easy to customize</p>
+
         <p>Stand-alone CSS (independent of Ionic's JavaScript)</p>
+
         <p><a href="http://ionicframework.com/docs/components/" target="_blank">ionicframework.com/docs/components</a>
         </p>
 
@@ -330,22 +425,16 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         </p>
 
         <p>CSS generated from the Sass preprocessor</p>
+
         <p>Quickly give your app its own look and feel</p>
+
         <p>CSS designed to be easily overridden</p>
+
         <p>Variables based with default settings</p>
+
         <p>80+ reusable and useful mixins</p>
 
       </section>
-
-
-      <section>
-        <h3>Ionicons</h3>
-        <img src="img/ionicons.png" class="logo" style="width:65%; height:auto">
-        <p style="margin-top: 20px">Over 600 MIT licensed font-icons included</p>
-        <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a>
-        </p>
-      </section>
-
 
       <section>
         <blockquote>
@@ -362,14 +451,17 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
       <section>
         <h3>Ionic's Adoption</h3>
 
-        <p>9000+ Github Stars</p>
-        <p>Top 70 mosted starred Github repos</p>
-        <p>Consistently Top 10 trending JS Github repos</p>
+        <p>Top 60 mosted starred Github project</p>
+
         <p>Ionic CLI averages 3,000 downloads/day</p>
+
         <p>120,000+ Ionic apps have been started from our CLI</p>
+
         <p>Released Alpha: November 2013</p>
+
         <p>Released Beta: March 2014</p>
-        <p>Release Candidate: Fall 2014</p>
+
+        <p>Release Candidate: November 2014</p>
 
       </section>
 
@@ -380,9 +472,7 @@ mixpanel.init("58e70c62dea6863b17b3865fe67bfcf0");
         </blockquote>
       </section>
 
-
-
-      <section>
+          <section>
         <div class="col preview demo-frame">
           <iframe src="demos/list/index.html"></iframe>
         </div>
@@ -635,12 +725,18 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
       <section>
         <pre class="ionic-blue" style="text-align:center"><code>$ npm install -g ionic</code></pre>
-<img class="logo" style="width:450px; margin:0" src="img/ionic-cli.png" alt="">
+        <img class="logo" style="width:450px; margin:0" src="img/ionic-cli.png" alt="">
+
         <p>Quickly create a project with starter templates</p>
+
         <p>Boilerplate app structure ready for customization</p>
+
         <p>Preconfigured tools: Gulp, Sass, Bower, etc.</p>
+
         <p>LiveReload in the browser and on Device</p>
+
         <p>Update Ionic Framework library files</p>
+
         <p>Build and run native apps</p>
 
       </section>
@@ -648,7 +744,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
       <section>
         <h3>Ionic CLI</h3>
-<pre class="ionic-blue" style="text-align:center">
+        <pre class="ionic-blue" style="text-align:center">
 <code class="fragment">$ npm install -g ionic cordova</code>
 <code class="fragment">$ ionic start myapp sidemenu</code>
 <code class="fragment">$ cd myapp</code>
@@ -657,66 +753,74 @@ $ionicModal.fromTemplateUrl('modal.html', {
       </section>
 
 
-      <section>
-        <h3><strong>Demo Time!</strong></h3>
-        <h6 class="light-text">May the demo gods be with us</h6>
-      </section>
-
+<!--       <section>
+  <h3><strong>Demo Time!</strong></h3>
+  <h6 class="light-text">May the demo gods be with us</h6>
+</section>
+ -->
 
       <section>
         <h3><span style="text-decoration:line-through">Ionic</span> Angular Testing</h3>
 
         <p>It's just an AngularJS app!</p>
+
         <p>Setup with a great separation of concerns</p>
+
         <p>Karma unit tests</p>
+
         <p>Protractor e2e tests</p>
 
       </section>
-
-
-      <section>
-        <h3>Ionic Showcase</h3>
-        <img src="img/showcase.png" height="300">
-        <p>
-          <a href="http://showcase.ionicframework.com/" target="_blank">showcase.ionicframework.com</a>
-        </p>
-      </section>
-
 
       <section>
         <h3><strong>MIT LICENSED</strong></h3>
         <h6 class="light-text">Free to use (even commercially)</h6>
       </section>
 
-
       <section>
         <h3><strong>COMMUNITY POWERED</strong></h3>
         <h6 class="light-text">Active developer forum, IRC and GitHub repo</h6>
       </section>
 
+<section>
+  <h3>Ionicons</h3>
+  <img src="img/ionicons.png" class="logo" style="width:65%; height:auto">
+
+  <p style="margin-top: 20px">Over 600 MIT licensed font-icons included</p>
+
+  <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a>
+  </p>
+</section>
 
       <section>
         <h3>Get Started with Ionic!</h3>
-        <br />
+        <br/>
+
         <p><strong>Easy-to-follow videos, tutorials and formulas</strong>
-          <br />
-          <a href="http://learn.ionicframework.com/" target="_blank"><span class="light-text">learn.ionicframework.com</span></a>
+          <br/>
+          <a href="http://learn.ionicframework.com/" target="_blank">
+            <span class="light-text">learn.ionicframework.com</span></a>
         </p>
-        <br />
+        <br/>
+
         <p><strong>Visit the Community Forum</strong>
-          <br />
-          <a href="http://forum.ionicframework.com/" target="_blank"><span class="light-text">forum.ionicframework.com</span></a>
+          <br/>
+          <a href="http://forum.ionicframework.com/" target="_blank">
+            <span class="light-text">forum.ionicframework.com</span></a>
         </p>
-        <br />
+        <br/>
+
         <p><strong>Contribute on GitHub</strong>
-          <br />
-          <a href="https://github.com/driftyco/ionic" target="_blank"><span class="light-text">github.com/driftyco/ionic</span></a>
+          <br/>
+          <a href="https://github.com/driftyco/ionic" target="_blank">
+            <span class="light-text">github.com/driftyco/ionic</span></a>
         </p>
       </section>
 
 
       <section>
         <h3><code style="font-size:60px">&lt;/html&gt;</code></h3>
+
         <h3><a href="https://twitter.com/mhartington" target="_blank">@mhartington</a></h3>
         <h4><a href="http://mikehartington.com/ionic-present/#/">http://mikehartington.com/ionic-present</a></h4>
       </section>
@@ -728,7 +832,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
   <script src="lib/js/head.min.js"></script>
   <script src="js/reveal.min.js"></script>
-  <script src="plugin/remotes/remotes.js"></script> 
+  <script src="plugin/remotes/remotes.js"></script>
 
   <script>
     // Full list of configuration options available here:
@@ -762,9 +866,9 @@ $ionicModal.fromTemplateUrl('modal.html', {
     }
   </script>
 
-<script>
-  mixpanel.track("Visited");
-</script>
+  <script>
+    mixpanel.track("Visited");
+  </script>
 
 </body>
 
