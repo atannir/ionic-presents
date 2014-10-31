@@ -87,7 +87,7 @@
       <section>
         <img src="img/ionic-logo.png" class="logo" width="296" height="331">
         <h4>Building Hybrid Apps with AngularJS and Ionic</h4>
-        <p class="fragment">The missing SDK for the Web</p>
+        <p class="fragment">The missing SDK for Hybrid Apps</p>
       </section>
 
 
@@ -106,20 +106,20 @@
       </section>
 
 
-      <section>
-        <h3>Overview</h3>
+      <!-- <section> -->
+      <!--   <h3>Overview</h3> -->
 
-        <p>Native vs Hybrid Apps</p>
+      <!--   <p>Native vs Hybrid Apps</p> -->
 
-        <p>Intro Ionic</p>
+      <!--   <p>Intro Ionic</p> -->
 
-        <p>UI Components</p>
+      <!--   <p>UI Components</p> -->
 
-        <p>Ionic CLI</p>
+      <!--   <p>Ionic CLI</p> -->
 
-        <p>Demos</p>
+      <!--   <p>Demos</p> -->
 
-      </section>
+      <!-- </section> -->
 
 
       <section>
@@ -290,6 +290,10 @@
         <p style="font-size:10px">https://mixpanel.com/trends/#report/android_kitkat</p>
       </section>
 
+      <section>
+	      <h3>The webs finally caught up</h3>
+	      <p class="fragment">but...</p>
+      </section>
 
       <section>
         <h3>Native SDKs Are Great</h3>
@@ -313,7 +317,7 @@
 
       <section>
         <img src="img/native-vs-web.jpg" alt="">
-      </section>
+	      </section>
 
       <section>
         <h3>There's No Web SDK</h3>
@@ -472,29 +476,29 @@
         </blockquote>
       </section>
 
-          <section>
-        <div class="col preview demo-frame">
-          <iframe src="demos/list/index.html"></iframe>
-        </div>
-        <div class="col code">
-          <h3>Lists</h3>
+          <!-- <section> -->
+        <!-- <div class="col preview demo-frame"> -->
+          <!-- <iframe src="demos/list/index.html"></iframe> -->
+        <!-- </div> -->
+        <!-- <div class="col code"> -->
+          <!-- <h3>Lists</h3> -->
 
-            <p>AngularJS Directive</p>
-            <p>Buttons exposed by swiping</p>
-            <p>Reorder</p>
-            <p>Delete</p>
+          <!--   <p>AngularJS Directive</p> -->
+          <!--   <p>Buttons exposed by swiping</p> -->
+          <!--   <p>Reorder</p> -->
+          <!--   <p>Delete</p> -->
 
-            <pre><code data-trim  class="xml">
-<ion-list>
+          <!--   <pre><code data-trim  class="xml"> -->
+<!-- <ion-list> -->
 
-  <ion-item ng-repeat="item in items"
-            item="item">
-    List Item {{ item.id }}
-  </ion-item>
+  <!-- <ion-item ng-repeat="item in items" -->
+          <!--   item="item"> -->
+    <!-- List Item {{ item.id }} -->
+  <!-- </ion-item> -->
 
-</ion-list></code></pre>
-        </div>
-      </section>
+<!-- </ion-list></code></pre> -->
+        <!-- </div> -->
+      <!-- </section> -->
 
       <section>
         <div class="col preview demo-frame">
@@ -608,26 +612,26 @@
       </section>
 
 
-      <section>
-        <div class="col preview demo-frame">
-          <iframe src="demos/slidebox/index.html"></iframe>
-        </div>
-        <div class="col code">
-          <h3>Slide Box</h3>
-          <pre><code data-trim  class="xml">
-<ion-slide-box on-slide-changed="change(index)">
-  <ion-slide>
-    Slide 1
-  </ion-slide>
-  <ion-slide>
-    Slide 2
-  </ion-slide>
-  <ion-slide>
-    Slide 3
-  </ion-slide>
-</ion-slide-box></code></pre>
-        </div>
-      </section>
+      <!-- <section> -->
+      <!--   <div class="col preview demo-frame"> -->
+      <!--     <iframe src="demos/slidebox/index.html"></iframe> -->
+      <!--   </div> -->
+      <!--   <div class="col code"> -->
+      <!--     <h3>Slide Box</h3> -->
+      <!--     <pre><code data-trim  class="xml"> -->
+<!-- <ion-slide-box on-slide-changed="change(index)"> -->
+  <!-- <ion-slide> -->
+    <!-- Slide 1 -->
+  <!-- </ion-slide> -->
+  <!-- <ion-slide> -->
+    <!-- Slide 2 -->
+  <!-- </ion-slide> -->
+  <!-- <ion-slide> -->
+    <!-- Slide 3 -->
+  <!-- </ion-slide> -->
+<!-- </ion-slide-box></code></pre> -->
+      <!--   </div> -->
+      <!-- </section> -->
 
 
       <section>
@@ -687,24 +691,24 @@ $ionicPopover.fromTemplateUrl('popover.html',
       </section>
 
 
-      <section>
-        <div class="col preview demo-frame">
-          <iframe src="demos/modal/index.html"></iframe>
-        </div>
-        <div class="col code">
-          <h3>Modal</h3>
+      <!-- <section> -->
+      <!--   <div class="col preview demo-frame"> -->
+      <!--     <iframe src="demos/modal/index.html"></iframe> -->
+      <!--   </div> -->
+      <!--   <div class="col code"> -->
+      <!--     <h3>Modal</h3> -->
 
-            <p>AngularJS Service</p>
-            <p>Inline or external template</p>
+      <!--       <p>AngularJS Service</p> -->
+      <!--       <p>Inline or external template</p> -->
 
-            <pre><code data-trim  class="js">
-$ionicModal.fromTemplateUrl('modal.html', {
-  scope: $scope
-}).then(function(modal) {
-  $scope.modal = modal;
-});</code></pre>
-        </div>
-      </section>
+      <!--       <pre><code data-trim  class="js"> -->
+<!-- $ionicModal.fromTemplateUrl('modal.html', { -->
+  <!-- scope: $scope -->
+<!-- }).then(function(modal) { -->
+  <!-- $scope.modal = modal; -->
+<!-- });</code></pre> -->
+      <!--   </div> -->
+      <!-- </section> -->
 
 
       <section>
@@ -745,10 +749,10 @@ $ionicModal.fromTemplateUrl('modal.html', {
       <section>
         <h3>Ionic CLI</h3>
         <pre class="ionic-blue" style="text-align:center">
-<code class="fragment">$ npm install -g ionic cordova</code>
-<code class="fragment">$ ionic start myapp sidemenu</code>
-<code class="fragment">$ cd myapp</code>
-<code class="fragment">$ ionic serve</code>
+<code class="fragment" style="font-size:22px;">$ npm install -g ionic cordova</code>
+<code class="fragment"  style="font-size:22px;">$ ionic start myapp sidemenu</code>
+<code class="fragment"  style="font-size:22px;">$ cd myapp</code>
+<code class="fragment"   style="font-size:22px;">$ ionic serve</code>
 </pre>
       </section>
 
@@ -797,21 +801,21 @@ $ionicModal.fromTemplateUrl('modal.html', {
         <br/>
 
         <p><strong>Easy-to-follow videos, tutorials and formulas</strong>
-          <br/>
+           <br/><br/>
           <a href="http://learn.ionicframework.com/" target="_blank">
             <span class="light-text">learn.ionicframework.com</span></a>
         </p>
         <br/>
 
         <p><strong>Visit the Community Forum</strong>
-          <br/>
+          <br/> <br/>
           <a href="http://forum.ionicframework.com/" target="_blank">
             <span class="light-text">forum.ionicframework.com</span></a>
         </p>
         <br/>
 
         <p><strong>Contribute on GitHub</strong>
-          <br/>
+          <br/> <br/>
           <a href="https://github.com/driftyco/ionic" target="_blank">
             <span class="light-text">github.com/driftyco/ionic</span></a>
         </p>
@@ -822,7 +826,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
         <h3><code style="font-size:60px">&lt;/html&gt;</code></h3>
 
         <h3><a href="https://twitter.com/mhartington" target="_blank">@mhartington</a></h3>
-        <h4><a href="http://mikehartington.com/ionic-present/#/">http://mikehartington.com/ionic-present</a></h4>
+        <h4><a href="http://mikehartington.com/ionic-present/#/">http://mikehartington.com/ionic-presents</a></h4>
       </section>
 
 
@@ -832,7 +836,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
   <script src="lib/js/head.min.js"></script>
   <script src="js/reveal.min.js"></script>
-  <script src="plugin/remotes/remotes.js"></script>
+  <!-- <script src="plugin/remotes/remotes.js"></script> -->
 
   <script>
     // Full list of configuration options available here:
